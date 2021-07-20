@@ -1,63 +1,107 @@
+import time 
+
+
 def welcome():
-    print("Welcome to Story Vault :) \n")
+    """Greets the user and starts the game."""
+    print("Welcome to Story Vault \n")
+    time.sleep(2)
     user = input("Please enter your name : \n")
-    print(user)
+    print(f"Hello {user} ! Let's pick a story. \n \n")
+    time.sleep(2)
 
 
 welcome()
 
 
-adjective = input("Insert a Adjective...\n")
-verb = input("Insert a Verb ...\n")
-noun = input("Insert a Noun ...\n")
+adjective = input("Insert a Adjective (describtive word)...\n")
+verb = input("Insert a Verb (action word)...\n")
+noun = input("Insert a Noun (name of a person/ place/ thing)...\n")
 animal = input("Insert an Animal...\n ")
-vehicle = input("Insert something you ride in...\n ")
+thing = input("Insert something or funny word...\n ")
 color = input("Insert a colour ....\n ")
 foods = input("Insert Foods (plural) ....\n")
 person = input("Insert Person's Name ...\n ")
 phrase = input("Insert a Phrase ....\n ")
 
 
-def story_1():
-    print("Today I went to my favorite Taco Stand called ") 
+def taco_story():
+    print("\n\nToday I went to my favorite Taco Stand called ") 
     print(f"the {adjective} {animal}. Unlike most food stands,")
-    print(f" they cook and prepare the food in a {vehicle}") 
+    print(f" they cook and prepare the food in a {thing}") 
     print(f"while you {verb}. The best thing on the menu is ")
     print(f"the {color} {noun}. Instead of ground beef they ")
     print(f"fill the taco with {foods}, cheese, and top it off")
     print(f"  with a salsa made from {foods}.") 
     print("If that doesn't make your mouth water, ")
-    print(f"then it' just like {person} always says: {phrase}!")
+    print(f"then it' just like {person} always says: {phrase}!", )
 
 
-story_1()
+taco_story()
 
 
-#story_2()
- #   print("I just got back from a pizza party with{ PERSON}.")
- #   print( "Can you believe we got to eat {ADJETIVE} pizza in A {PLACE}?!")
- #   print("Everyone got to choose their own toppings. ")
-  #  print("I made '{FOOD} and {THINGS}' pizza, which is my favorite!")
-  #  print("They even stuffed the crust with {THINGS(p)}. How {FEELING}! ")
-  #  print("If that wasn't good enough already, A {CELEBRITY} was there singing {SONG TITLE}.")
-   # print("I was so inspired by the music, ")
+adjective = input("Insert a Adjective (describtive word)...\n")
+song = input("Insert a Song name...\n ")
+thing = input("Insert something or funny word...\n ")
+color = input("Insert a colour ....\n ")
+foods = input("Insert Foods (plural) ....\n")
+person = input("Insert Person's Name ...\n ")
+feeling = input("Insert a Feeling...\n ")
+celebrity = input("Insert Celebrities's Name ...\n ")
+place = input("Insert a Place...\n ")
+
+
+def pizza_party():
+    print(f"I just got back from a pizza party with {person}.")
+    print( f"Can you believe we got to eat {adjective} pizza in A {place}?!")
+    print("Everyone got to choose their own toppings. ")
+    print(f"I made '{foods} and {thing}'s pizza, which is my favorite!")
+    print(f"They even stuffed the crust with {thing}'s. How {feeling}! ")
+    print(f"If that wasn't good enough already, A {celebrity} was there ")
+    print(f"singing {song} I was so inspired by the music. ")
     
 
-#story_3()
-  #  print("Hi my name is {celebrity}, ")
-   # print("but my friends call me {silly word}")
-   # print("My favorite color is the {color} of {THINGS} and my favorite ")
-  #  print("thing to do is VERB. My parents were a {ANIMAL} and {JOB},)
-   # print("which is why we lived in {PLACE}. You probably know me from")
-   # print("my TV commercial for {SOMETHING YOU BUY}. ")
-   # print("I'm the one who says, '{SAYING}' at the very end! ")
+pizza_party()
 
 
-#story_4()
-    #print("Last night I dreamed I was a {ADJETIVE} butterfly")
-    #print("with {COLOR} splotches that looked like {THINGS}." )
-    #print("I flew to {PLACE} with my best friend, {PERSON}, ")
-   # print("who was a {ADJETIVE} INSECT. We ate some {FOOD} when")
-   # print("we got there and then decided to {VERB}. The dream")
-   # print("ended when I said, '{PHRASE}.' ")
+verb = input("Insert a Verb (action word)...\n")
+job = input("Insert a Job name...\n")
+animal = input("Insert an Animal...\n ")
+thing = input("Insert something or funny word...\n ")
+color = input("Insert a colour ....\n ")
+celebrity = input("Insert Celebrities's Name ...\n ")
+phrase = input("Insert a Phrase ....\n ")
+place = input("Insert a Place...\n ")
+
+
+def about_me():
+    print(f"Hi my name is {celebrity}, ")
+    print(f"but my friends call me {thing}")
+    print(f"My favorite color is the {color} of {thing}'s and my favorite ")
+    print(f"thing to do is {verb}. My parents were a {animal} and {job},")
+    print(f"which is why we lived in {place}. You probably know me from")
+    print(f"my TV commercial for {thing}. ")
+    print(f"I'm the one who says, '{phrase}' at the very end! ")
+
+
+about_me()    
+
+adjective = input("Insert a Adjective (describtive word)...\n")
+verb = input("Insert a Verb (action word)...\n")
+place = input("Insert a Place...\n ")
+thing = input("Insert something or funny word...\n ")
+color = input("Insert a colour ....\n ")
+food = input("Insert Foods (plural) ....\n")
+person = input("Insert Person's Name ...\n ")
+phrase = input("Insert a Phrase ....\n ")
+
+
+def butterflies():
+    print(f"Last night I dreamed I was a {adjective} butterfly")
+    print(f"with {color} splotches that looked like {thing}'s." )
+    print(f"I flew to {place} with my best friend, {person}, ")
+    print(f"who was a {adjective} INSECT. We ate some {food} when")
+    print(f"we got there and then decided to {verb}. The dream")
+    print(f"ended when I said, '{phrase}.' ")
     
+
+butterflies()
