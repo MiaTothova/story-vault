@@ -11,8 +11,8 @@ def welcome():
 
 
 def main():
+    # prints a list of available stories and allows for a choice to take place
     welcome()
-
     while True:
         print("I have 4 stories in my vault. \n")
         print("1. Taco Story")
@@ -23,23 +23,21 @@ def main():
         time.sleep(2)
         print("Which will you choose? (1, 2, 3,4) ?\n")
         choice = input()
-
+        # Calls a story function based on choices
         if choice == "1":
-            # if a user typed "1" start taco_story()
             taco_story()
         elif choice == "2":
-            # else if user entered "2" start pizza_party()
             pizza_party()
         elif choice == "3":
-            # else if user entered "3" start about_me()
             about_me() 
         elif choice == "4":
-            # else if user entered "4" start butterflies()
             butterflies()
         elif choice == "5":
+            # Breaks the loop to exit game on entering 5
+            print("\n\n See you next time!")
             break
         else:
-            print("Please enter a valid option")
+            print("Please enter a valid option! \n\n")
     
 
 def input_properties():
@@ -52,15 +50,22 @@ def input_properties():
     foods = input("Insert Foods (plural) ....\n")
     person = input("Insert Person's Name ....\n ")
     phrase = input("Insert a Phrase ....\n ")
+    song = input("Insert a Song name....\n ")
+    thing = input("Insert something or funny word...\n ")
+    feeling = input("Insert a Feeling....\n ")
+    celebrity = input("Insert Celebrities's Name ....\n ")
+    place = input("Insert a Place....\n ")
+    job = input("Insert a Job name....\n")
 
     return (adjective, verb, noun, animal, vehicle, color, foods, person,
-            phrase)
+            phrase, song, thing, feeling, celebrity, place, job)
 
 
 def taco_story():
     (adjective, verb, noun, animal, vehicle, color, foods, person,
      phrase) = input_properties()
     time.sleep(2)
+
     print("\n\nToday I went to my favorite Taco Stand called ") 
     print(f"the {adjective} {animal}. Unlike most food stands,")
     print(f" they cook and prepare the food in a {vehicle}") 
@@ -72,19 +77,12 @@ def taco_story():
     print(f"then it' just like {person} always says: {phrase}! \n\n",)
 
 
-
 def pizza_party():
-    adjective = input("Insert a Adjective (describtive word)....\n")
+    (adjective, person, foods, place, celebrity, feeling, 
+     thing, song) = input_properties()
+    time.sleep(2)
     song = input("Insert a Song name....\n ")
     thing = input("Insert something or funny word...\n ")
-    color = input("Insert a colour ....\n ")
-    foods = input("Insert Foods (plural) ....\n")
-    person = input("Insert Person's Name ....\n ")
-    feeling = input("Insert a Feeling....\n ")
-    celebrity = input("Insert Celebrities's Name ....\n ")
-    place = input("Insert a Place....\n ")
-
-
     print(f"\n\n I just got back from a pizza party with {person}.")
     print(f"Can you believe we got to eat {adjective} pizza in A {place}?!")
     print("Everyone got to choose their own toppings. ")
@@ -94,17 +92,9 @@ def pizza_party():
     print(f"singing {song} I was so inspired by the music. \n\n")
     
 
-
 def about_me():
-    verb = input("Insert a Verb (action word)....\n")
-    job = input("Insert a Job name....\n")
-    animal = input("Insert an Animal...\n ")
-    thing = input("Insert something or funny word....\n ")
-    color = input("Insert a colour ....\n ")
-    celebrity = input("Insert Celebrities's Name ....\n ")
-    phrase = input("Insert a Phrase ....\n ")
-    place = input("Insert a Place....\n ")
-
+    (verb, animal, color, celebrity, thing, job, place,
+     phrase) = input_properties()
     print(f"\n\n Hi my name is {celebrity}, ")
     print(f"but my friends call me {thing}")
     print(f"My favorite color is the {color} of {thing}'s and my favorite ")
@@ -115,14 +105,8 @@ def about_me():
 
 
 def butterflies():
-    adjective = input("Insert a Adjective (describtive word)....\n")
-    verb = input("Insert a Verb (action word)....\n")
-    place = input("Insert a Place....\n ")
-    thing = input("Insert something or funny word....\n ")
-    color = input("Insert a colour ....\n ")
-    food = input("Insert Foods (plural) ....\n")
-    person = input("Insert Person's Name ....\n ")
-    phrase = input("Insert a Phrase ....\n ")
+    (adjective, color, thing, place, person, food, verb,
+     phrase) = input_properties()
     print(f"\n\n Last night I dreamed I was a {adjective} butterfly")
     print(f"with {color} splotches that looked like {thing}'s.")
     print(f"I flew to {place} with my best friend, {person}, ")
