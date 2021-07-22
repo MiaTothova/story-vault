@@ -48,8 +48,16 @@ def main():
             # Breaks the loop to exit game on entering 5
             print("\n\n See you next time!")
             print("\n press : RUN PROGRAM to play again")
+            print("        _____                 _ _                  ")
+            print("       / ____|               | | |                 ")
+            print("       | |  __  ___   ___   __| | |__  _   _  ___  ")
+            print("       | | |_ |/ _ \ / _ \ / _` | '_ \| | | |/ _ \ ")
+            print("       | |__| | (_) | (_) | (_| | |_) | |_| |  __/ ")
+            print("        \_____|\___/ \___/ \__,_|_.__/ \__, |\___| ")
+            print("                                          | |      ")
+            print("                                        __/ |      ")
+            print("                                       |___/       ")
             time.sleep(2)
-
             break
         else:
             print("Please enter a valid option! \n\n")
