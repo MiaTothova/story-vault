@@ -1,3 +1,5 @@
+# All code writen by: Marketa Mia Tothova 5P
+
 import time 
 
 
@@ -63,30 +65,40 @@ def main():
             print("Please enter a valid option! \n\n")
     
 
-def input_properties():
+#def input_properties():
+    #adjective = input("Insert a Adjective (describtive word)....\n")
+    #verb = input("Insert a Verb (action word)....\n")
+    #noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
+    #animal = input("Insert an Animal....\n ")
+    #vehicle = input("Insert something you ride in....\n ")
+    #color = input("Insert a colour ....\n ")
+    #foods = input("Insert Foods (plural) ....\n")
+    #person = input("Insert Person's Name ....\n ")
+    #phrase = input("Insert a Phrase ....\n ")
+    #song = input("Insert a Song name....\n ")
+    #thing = input("Insert something or funny word...\n ")
+    #feeling = input("Insert a Feeling....\n ")
+    #celebrity = input("Insert Celebrities's Name ....\n ")
+    #place = input("Insert a Place....\n ")
+    #job = input("Insert a Job name....\n")
+
+    #return (adjective, verb, noun, animal, vehicle, color, foods, person,
+            #phrase, song, thing, feeling, celebrity, place, job)
+
+
+def taco_story():
+    #(adjective, verb, noun, animal, vehicle, color, foods, person,
+     #phrase) = input_properties()
     adjective = input("Insert a Adjective (describtive word)....\n")
     verb = input("Insert a Verb (action word)....\n")
     noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
-    animal = input("Insert an Animal....\n ")
     vehicle = input("Insert something you ride in....\n ")
     color = input("Insert a colour ....\n ")
     foods = input("Insert Foods (plural) ....\n")
     person = input("Insert Person's Name ....\n ")
     phrase = input("Insert a Phrase ....\n ")
-    song = input("Insert a Song name....\n ")
-    thing = input("Insert something or funny word...\n ")
-    feeling = input("Insert a Feeling....\n ")
-    celebrity = input("Insert Celebrities's Name ....\n ")
-    place = input("Insert a Place....\n ")
-    job = input("Insert a Job name....\n")
-
-    return (adjective, verb, noun, animal, vehicle, color, foods, person,
-            phrase, song, thing, feeling, celebrity, place, job)
-
-
-def taco_story():
-    (adjective, verb, noun, animal, vehicle, color, foods, person,
-     phrase) = input_properties()
+    animal = input("Insert an Animal....\n ")
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ THE TACO STORY ] <------<< ")
     print("                      ___          /|       ")
@@ -112,8 +124,17 @@ def taco_story():
 
 
 def pizza_party():
-    (adjective, person, foods, place, celebrity, feeling, 
-     thing, song) = input_properties()
+    #(adjective, person, foods, place, celebrity, feeling, 
+     #thing, song) = input_properties()
+    adjective = input("Insert a Adjective (describtive word)....\n")
+    person = input("Insert Person's Name ....\n ")
+    foods = input("Insert Foods (plural) ....\n")
+    celebrity = input("Insert Celebrities's Name ....\n ")
+    feeling = input("Insert a Feeling....\n ")
+    thing = input("Insert something or funny word...\n ")
+    song = input("Insert a Song name....\n ")
+    place = input("Insert a Place....\n ")
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("     >>------>  [ THE PIZZA PARTY ] <------<<  ")
     print("⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀   ⠀⠀⣠⣤⣶⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ")
@@ -140,8 +161,17 @@ def pizza_party():
     
 
 def about_me():
-    (verb, animal, color, celebrity, thing, job, place,
-     phrase) = input_properties()
+    #(verb, animal, color, celebrity, thing, job, place,
+     #phrase) = input_properties()
+    verb = input("Insert a Verb (action word)....\n")
+    animal = input("Insert an Animal....\n ")
+    color = input("Insert a colour ....\n ")
+    celebrity = input("Insert Celebrities's Name ....\n ")
+    thing = input("Insert something or funny word...\n ")
+    place = input("Insert a Place....\n ")
+    job = input("Insert a Job name....\n")
+    phrase = input("Insert a Phrase ....\n ")
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ ABOUT ME ] <------<<   ")
     print("                    ___   .--.     ")
@@ -174,8 +204,17 @@ def about_me():
 
 
 def butterflies():
-    (adjective, color, thing, place, person, food, verb,
-     phrase) = input_properties()
+    #(adjective, color, thing, place, person, foods, verb,
+     #phrase) = input_properties()
+    color = input("Insert a colour ....\n ")
+    adjective = input("Insert a Adjective (describtive word)....\n")
+    thing = input("Insert something or funny word...\n ")
+    place = input("Insert a Place....\n ")
+    person = input("Insert Person's Name ....\n ")
+    foods = input("Insert Foods (plural) ....\n")
+    verb = input("Insert a Verb (action word)....\n")
+    phrase = input("Insert a Phrase ....\n ")
+    print("\n .-~-.-~-.-~.-~-.-~-.-~  LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("   >>------>  [ BUTTERLIES] <------<<   ")     
     print("    / `._                     _.' \     ") 
@@ -195,7 +234,7 @@ def butterflies():
     print(f"\n\n Last night I dreamed I was a {adjective} butterfly")
     print(f"with {color} splotches that looked like {thing}'s.")
     print(f"I flew to {place} with my best friend, {person}, ")
-    print(f"who was a {adjective} INSECT. We ate some {food} when")
+    print(f"who was a {adjective} INSECT. We ate some {foods} when")
     print(f"we got there and then decided to {verb}. The dream")
     print(f"ended when I said, '{phrase}.' \n\n")
     
