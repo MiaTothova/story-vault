@@ -3,7 +3,19 @@ import time
 
 def welcome():
     # Greets the user and starts the game.
-    print("Welcome to Story Vault \n")
+    print("    __          __  _                            _         ")   
+    print("    \ \        / / | |                          | |        ")
+    print("     \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   ")
+    print("      \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  ")
+    print("       \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | ")
+    print("      __\/_ \/ \___|_|\___\___/|_|_|_| |_|\___|  \__\___/  ")
+    print("     / ____| |                   \ \    / /        | | |   ")
+    print("    | (___ | |_ ___  _ __ _   _   \ \  / /_ _ _   _| | |_  ")
+    print("     \___ \| __/ _ \| '__| | | |   \ \/ / _` | | | | | __| ")
+    print("     ____) | || (_) | |  | |_| |    \  / (_| | |_| | | |_  ")
+    print("    |_____/ \__\___/|_|   \__, |     \/ \__,_|\__,_|_|\__| ")
+    print("                           __/ |                           ")
+    print("                          |___/                            ")
     time.sleep(2)
     user = input("Please enter your name : \n")
     print(f"Hello {user} ! Let's pick a story. \n \n")
@@ -35,6 +47,9 @@ def main():
         elif choice == "5":
             # Breaks the loop to exit game on entering 5
             print("\n\n See you next time!")
+            print("\n press : RUN PROGRAM to play again")
+            time.sleep(2)
+
             break
         else:
             print("Please enter a valid option! \n\n")
