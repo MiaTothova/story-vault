@@ -2,6 +2,17 @@
 
 import time 
 
+words = {
+    'adjective': ['red', 'blue'],
+    'animal': ['fox', 'lion'],
+    'vehicle': ['car', 'van'],
+    'verb': ['sleeping', 'drinking'],
+    'noun': ['dog', 'cat'],
+    'foods': ['rice', 'beens'],
+    'person': ['dad', 'son', 'mum'],
+    'phrase': ['do it'],
+    'color': ['red', 'blue', 'green', 'black']
+}
 
 def welcome():
     # Greets the user and starts the game.
@@ -22,6 +33,46 @@ def welcome():
     user = input("Please enter your name : \n")
     print(f"Hello {user} ! Let's pick a story. \n \n")
     time.sleep(2)
+
+
+def selectItem(key):
+    # get the array of items. e.g: adjetive, animal
+    items = words[key]
+    # tranverse the array with index that is why range is being used
+    for i in range(len(items)):
+        # Print the index and the value in the menu
+        print("{}.- {}".format(i + 1, items[i]))
+
+    # Initialize selection in -1 as no selection
+    selection = -1
+
+    # Make validInput false at the beggining.
+    # This variable controls the input validation
+    validInput = False
+
+    # item is the final value that the user selected from the menu
+    item = None
+
+    # This loop is going to be repeated until the user has selected
+    # a valid option from the menu.
+    while not validInput:
+        # ask the user to enter a number asociated to a value in the menu
+        # rendered above.
+        input_value = input("Select a '{}' form the list above: [1..{}]\n"
+                            .format(key, len(items)))
+        # Enclose in a try-except the intructions that could thrown
+        # an exception to validate the user input.
+        # If the entered value is not an integer the ValueError exception is
+        # thrown.
+        # If the integer value selected is not in the range of the values then
+        # the IndexError is thrown when retrieving the items[selection-1] .
+        try:
+            selection = int(input_value)
+            item = items[selection-1]
+            validInput = True
+        except (ValueError, IndexError):
+            validInput = False
+    return item
 
 
 def main():
@@ -65,39 +116,50 @@ def main():
             print("Please enter a valid option! \n\n")
     
 
-#def input_properties():
-    #adjective = input("Insert a Adjective (describtive word)....\n")
-    #verb = input("Insert a Verb (action word)....\n")
-    #noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
-    #animal = input("Insert an Animal....\n ")
-    #vehicle = input("Insert something you ride in....\n ")
-    #color = input("Insert a colour ....\n ")
-    #foods = input("Insert Foods (plural) ....\n")
-    #person = input("Insert Person's Name ....\n ")
-    #phrase = input("Insert a Phrase ....\n ")
-    #song = input("Insert a Song name....\n ")
-    #thing = input("Insert something or funny word...\n ")
-    #feeling = input("Insert a Feeling....\n ")
-    #celebrity = input("Insert Celebrities's Name ....\n ")
-    #place = input("Insert a Place....\n ")
-    #job = input("Insert a Job name....\n")
+# def input_properties():
+#     adjective = input("Insert a Adjective (describtive word)....\n")
+#     verb = input("Insert a Verb (action word)....\n")
+#     noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
+#     animal = input("Insert an Animal....\n ")
+#     vehicle = input("Insert something you ride in....\n ")
+#     color = input("Insert a colour ....\n ")
+#     foods = input("Insert Foods (plural) ....\n")
+#     person = input("Insert Person's Name ....\n ")
+#     phrase = input("Insert a Phrase ....\n ")
+#     song = input("Insert a Song name....\n ")
+#     thing = input("Insert something or funny word...\n ")
+#     feeling = input("Insert a Feeling....\n ")
+#     celebrity = input("Insert Celebrities's Name ....\n ")
+#     place = input("Insert a Place....\n ")
+#     job = input("Insert a Job name....\n")
 
-    #return (adjective, verb, noun, animal, vehicle, color, foods, person,
-            #phrase, song, thing, feeling, celebrity, place, job)
+#     return (adjective, verb, noun, animal, vehicle, color, foods, person,
+#             phrase, song, thing, feeling, celebrity, place, job)
 
 
 def taco_story():
-    #(adjective, verb, noun, animal, vehicle, color, foods, person,
-     #phrase) = input_properties()
-    adjective = input("Insert a Adjective (describtive word)....\n")
-    verb = input("Insert a Verb (action word)....\n")
-    noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
-    vehicle = input("Insert something you ride in....\n ")
-    color = input("Insert a colour ....\n ")
-    foods = input("Insert Foods (plural) ....\n")
-    person = input("Insert Person's Name ....\n ")
-    phrase = input("Insert a Phrase ....\n ")
-    animal = input("Insert an Animal....\n ")
+    # (adjective, verb, noun, animal, vehicle, color, foods, person,
+    #  phrase,_) = input_properties()
+    # adjective = input("Insert a Adjective (describtive word)....\n")
+    # verb = input("Insert a Verb (action word)....\n")
+    # noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
+    # vehicle = input("Insert something you ride in....\n ")
+    # color = input("Insert a colour ....\n ")
+    # foods = input("Insert Foods (plural) ....\n")
+    # person = input("Insert Person's Name ....\n ")
+    # phrase = input("Insert a Phrase ....\n ")
+    # animal = input("Insert an Animal....\n ")
+
+    adjective = selectItem('adjective')
+    animal = selectItem('animal')
+    vehicle = selectItem('vehicle')
+    verb = selectItem('verb')
+    color = selectItem('color')
+    noun = selectItem('noun')
+    foods = selectItem('foods')
+    person = selectItem('person')
+    phrase = selectItem('phrase')
+
     print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ THE TACO STORY ] <------<< ")
@@ -124,16 +186,16 @@ def taco_story():
 
 
 def pizza_party():
-    #(adjective, person, foods, place, celebrity, feeling, 
-     #thing, song) = input_properties()
-    adjective = input("Insert a Adjective (describtive word)....\n")
-    person = input("Insert Person's Name ....\n ")
-    foods = input("Insert Foods (plural) ....\n")
-    celebrity = input("Insert Celebrities's Name ....\n ")
-    feeling = input("Insert a Feeling....\n ")
-    thing = input("Insert something or funny word...\n ")
-    song = input("Insert a Song name....\n ")
-    place = input("Insert a Place....\n ")
+    (adjective, person, foods, place, celebrity, feeling, 
+     thing, song) = input_properties()
+    # adjective = input("Insert a Adjective (describtive word)....\n")
+    # person = input("Insert Person's Name ....\n ")
+    # foods = input("Insert Foods (plural) ....\n")
+    # celebrity = input("Insert Celebrities's Name ....\n ")
+    # feeling = input("Insert a Feeling....\n ")
+    # thing = input("Insert something or funny word...\n ")
+    # song = input("Insert a Song name....\n ")
+    # place = input("Insert a Place....\n ")
     print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("     >>------>  [ THE PIZZA PARTY ] <------<<  ")
@@ -161,16 +223,16 @@ def pizza_party():
     
 
 def about_me():
-    #(verb, animal, color, celebrity, thing, job, place,
-     #phrase) = input_properties()
-    verb = input("Insert a Verb (action word)....\n")
-    animal = input("Insert an Animal....\n ")
-    color = input("Insert a colour ....\n ")
-    celebrity = input("Insert Celebrities's Name ....\n ")
-    thing = input("Insert something or funny word...\n ")
-    place = input("Insert a Place....\n ")
-    job = input("Insert a Job name....\n")
-    phrase = input("Insert a Phrase ....\n ")
+    (verb, animal, color, celebrity, thing, job, place,
+     phrase) = input_properties()
+    # verb = input("Insert a Verb (action word)....\n")
+    # animal = input("Insert an Animal....\n ")
+    # color = input("Insert a colour ....\n ")
+    # celebrity = input("Insert Celebrities's Name ....\n ")
+    # thing = input("Insert something or funny word...\n ")
+    # place = input("Insert a Place....\n ")
+    # job = input("Insert a Job name....\n")
+    # phrase = input("Insert a Phrase ....\n ")
     print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ ABOUT ME ] <------<<   ")
@@ -204,16 +266,16 @@ def about_me():
 
 
 def butterflies():
-    #(adjective, color, thing, place, person, foods, verb,
-     #phrase) = input_properties()
-    color = input("Insert a colour ....\n ")
-    adjective = input("Insert a Adjective (describtive word)....\n")
-    thing = input("Insert something or funny word...\n ")
-    place = input("Insert a Place....\n ")
-    person = input("Insert Person's Name ....\n ")
-    foods = input("Insert Foods (plural) ....\n")
-    verb = input("Insert a Verb (action word)....\n")
-    phrase = input("Insert a Phrase ....\n ")
+    (adjective, color, thing, place, person, foods, verb,
+     phrase) = input_properties()
+    # color = input("Insert a colour ....\n ")
+    # adjective = input("Insert a Adjective (describtive word)....\n")
+    # thing = input("Insert something or funny word...\n ")
+    # place = input("Insert a Place....\n ")
+    # person = input("Insert Person's Name ....\n ")
+    # foods = input("Insert Foods (plural) ....\n")
+    # verb = input("Insert a Verb (action word)....\n")
+    # phrase = input("Insert a Phrase ....\n ")
     print("\n .-~-.-~-.-~.-~-.-~-.-~  LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("   >>------>  [ BUTTERLIES] <------<<   ")     
