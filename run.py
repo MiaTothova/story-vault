@@ -23,7 +23,7 @@ words = {
 
 def welcome():
     # Greets the user and starts the game.
-    print("    __          __  _                            _         ")   
+    print("    __          __  _                            _         ")
     print("    \ \        / / | |                          | |        ")
     print("     \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   ")
     print("      \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  ")
@@ -245,7 +245,7 @@ def butterflies():
     foods = selectItem('foods')
     person = selectItem('person')
     phrase = selectItem('phrase')
-    
+
     print("\n .-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("   >>------>  [ BUTTERLIES] <------<<   ")
@@ -262,13 +262,13 @@ def butterflies():
     print("        |`'   ;_.-'|:|`-._;   `'|       ")
     print("        '.o_.-' ;.'|:|'.; `-._o.'       ")
     print("         ''.__.'   \:/   '.__.''         ")
-    print("                    ^                   ") 
+    print("                    ^                   ")
     print(f"\n\n Last night I dreamed I was a {adjective} butterfly")
     print(f"with {color} splotches that looked like {thing}'s.")
     print(f"I flew to {place} with my best friend, {person}, ")
     print(f"who was a {adjective} INSECT. We ate some {foods} when")
     print(f"we got there and then decided to {verb}. The dream")
     print(f"ended when I said, '{phrase}.' \n\n")
-    
+
 
 main()
