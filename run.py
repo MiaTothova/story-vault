@@ -9,15 +9,15 @@ words = {
     'verb': ['Sleeping', 'Drinking', 'Move', 'Like', 'Jump', 'Run'],
     'noun': ['Beach', 'Gold', 'Football', 'Crowd', 'Bed', 'Dress'],
     'foods': ['Rice', 'Beans', 'Crisps', 'Chocolate', 'Crackers', 'Bananas'],
-    'person': ['Mum', 'Dad', 'Brother', 'Sister', 'John', 'Molly', 'Mike', 'Sam'],
+    'person': ['Mum', 'Dad', 'Brother', 'Sister', 'John', 'Molly', 'Sam'],
     'color': ['Red', 'Blue', 'Orange', 'Black', 'Yellow', 'Purple', 'Green'],
-    'place': ['Beach', 'Shop', 'Country Side', 'Hospital', 'Playground', 'School'],
+    'place': ['Beach', 'Shop', 'Country Side', 'Playground', 'School'],
     'celebrity': ['Bruno Mars', 'Kesha', 'Beyounce', 'Ed Sheeran'],
     'feeling': ['Happy', 'Sad', 'Exited', 'Angry', 'Confused', 'Jolly'],
     'thing': ['Hair', 'Carpet', 'Alien', 'Ball', 'Frisby', 'Toy'],
-    'song': ['Twinkle Twinkle', 'ABC Song', 'Itsy Bitsy Spider', 'Pat a Cake', ],
-    'job': ['Magician', 'Electrician', 'Hair Stylist', 'Pop Star', 'King', 'Queen'],
-    'phrase': ['Just di it!', 'Watch out!', 'With great power, comes great responsibility']
+    'song': ['Twinkle Twinkle', 'ABC Song', 'Itsy Bitsy Spider', 'Pat a Cake'],
+    'job': ['Magician', 'Electrician', 'Hair Stylist', 'King', 'Queen'],
+    'phrase': ['Just do it!', 'With power', 'comes great responsibility']
 }
 
 
