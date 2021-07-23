@@ -157,6 +157,8 @@ def taco_story():
     print(f"  with a salsa made from {foods}.")
     print("If that doesn't make your mouth water, ")
     print(f"then it' just like {person} always says: {phrase}! \n\n",)
+    time.sleep(10)
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ CHOOSE AGAIN??? -~-.-~-.-~.-~-.-~-.-~\n\n")
 
 
 def pizza_party():
@@ -192,6 +194,8 @@ def pizza_party():
     print(f"They even stuffed the crust with {thing}'s. How {feeling}! ")
     print(f"If that wasn't good enough already, A {celebrity} was there ")
     print(f"singing {song} I was so inspired by the music. \n\n")
+    time.sleep(10)
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ CHOOSE AGAIN??? -~-.-~-.-~.-~-.-~-.-~\n\n")
 
 
 def about_me():
@@ -233,6 +237,8 @@ def about_me():
     print(f"which is why we lived in {place}. You probably know me from")
     print(f"my TV commercial for {thing}. ")
     print(f"I'm the one who says, '{phrase}' at the very end!\n\n ")
+    time.sleep(10)
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ CHOOSE AGAIN??? -~-.-~-.-~.-~-.-~-.-~\n\n")
 
 
 def butterflies():
@@ -244,7 +250,6 @@ def butterflies():
     foods = selectItem('foods')
     person = selectItem('person')
     phrase = selectItem('phrase')
-
     print("\n .-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("   >>------>  [ BUTTERLIES] <------<<   ")
@@ -268,6 +273,8 @@ def butterflies():
     print(f"who was a {adjective} INSECT. We ate some {foods} when")
     print(f"we got there and then decided to {verb}. The dream")
     print(f"ended when I said, '{phrase}.' \n\n")
+    time.sleep(10)
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ CHOOSE AGAIN??? -~-.-~-.-~.-~-.-~-.-~\n\n")
 
 
 main()
