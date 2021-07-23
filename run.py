@@ -1,6 +1,6 @@
 # All code writen by: Marketa Mia Tothova 5P
 
-import time 
+import time
 
 words = {
     'adjective': ['red', 'blue'],
@@ -10,9 +10,16 @@ words = {
     'noun': ['dog', 'cat'],
     'foods': ['rice', 'beens'],
     'person': ['dad', 'son', 'mum'],
-    'phrase': ['do it'],
-    'color': ['red', 'blue', 'green', 'black']
+    'color': ['red', 'blue', 'green', 'black'],
+    'place': ['aaa', 'sss'],
+    'celebrity': ['aaa', 'sss'],
+    'feeling': ['aaa', 'sss'],
+    'thing': ['aaa', 'sss'],
+    'song': ['aaa', 'sss'],
+    'job': ['aaa', 'sss'],
+    'phrase': ['Just di it!', 'Watch out!']
 }
+
 
 def welcome():
     # Greets the user and starts the game.
@@ -94,15 +101,15 @@ def main():
         elif choice == "2":
             pizza_party()
         elif choice == "3":
-            about_me() 
+            about_me()
         elif choice == "4":
             butterflies()
         elif choice == "5":
             # Breaks the loop to exit game on entering 5
             print("\n\n See you next time!")
             print("\n press : RUN PROGRAM to play again")
-            print("        _____                 _ _                  ")
-            print("       / ____|               | | |                 ")
+            print("        _____                  _ _                  ")
+            print("       / ____|                | | |                 ")
             print("       | |  __  ___   ___   __| | |__  _   _  ___  ")
             print("       | | |_ |/ _ \ / _ \ / _` | '_ \| | | |/ _ \ ")
             print("       | |__| | (_) | (_) | (_| | |_) | |_| |  __/ ")
@@ -114,42 +121,11 @@ def main():
             break
         else:
             print("Please enter a valid option! \n\n")
-    
-
-# def input_properties():
-#     adjective = input("Insert a Adjective (describtive word)....\n")
-#     verb = input("Insert a Verb (action word)....\n")
-#     noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
-#     animal = input("Insert an Animal....\n ")
-#     vehicle = input("Insert something you ride in....\n ")
-#     color = input("Insert a colour ....\n ")
-#     foods = input("Insert Foods (plural) ....\n")
-#     person = input("Insert Person's Name ....\n ")
-#     phrase = input("Insert a Phrase ....\n ")
-#     song = input("Insert a Song name....\n ")
-#     thing = input("Insert something or funny word...\n ")
-#     feeling = input("Insert a Feeling....\n ")
-#     celebrity = input("Insert Celebrities's Name ....\n ")
-#     place = input("Insert a Place....\n ")
-#     job = input("Insert a Job name....\n")
-
-#     return (adjective, verb, noun, animal, vehicle, color, foods, person,
-#             phrase, song, thing, feeling, celebrity, place, job)
 
 
 def taco_story():
-    # (adjective, verb, noun, animal, vehicle, color, foods, person,
-    #  phrase,_) = input_properties()
-    # adjective = input("Insert a Adjective (describtive word)....\n")
-    # verb = input("Insert a Verb (action word)....\n")
-    # noun = input("Insert a Noun (name of a person/ place/ thing)....\n")
-    # vehicle = input("Insert something you ride in....\n ")
-    # color = input("Insert a colour ....\n ")
-    # foods = input("Insert Foods (plural) ....\n")
-    # person = input("Insert Person's Name ....\n ")
-    # phrase = input("Insert a Phrase ....\n ")
-    # animal = input("Insert an Animal....\n ")
-
+    # Allows user to input choice of words from dictionary
+    # and prints them to the story
     adjective = selectItem('adjective')
     animal = selectItem('animal')
     vehicle = selectItem('vehicle')
@@ -159,8 +135,7 @@ def taco_story():
     foods = selectItem('foods')
     person = selectItem('person')
     phrase = selectItem('phrase')
-
-    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ THE TACO STORY ] <------<< ")
     print("                      ___          /|       ")
@@ -174,29 +149,27 @@ def taco_story():
     print("     %%   %%   \  '.       .'  /   %%  %%   ")
     print("     %%   %%    '.  `-.,.-'  .'    %%  %%   ")
     print("     %%   %%      '-.,___,.-'      %%  %%   ")
-    print("\n\nToday I went to my favorite Taco Stand called ") 
+    print("\n\nToday I went to my favorite Taco Stand called ")
     print(f"the {adjective} {animal}. Unlike most food stands,")
-    print(f" they cook and prepare the food in a {vehicle}") 
+    print(f" they cook and prepare the food in a {vehicle}")
     print(f"while you {verb}. The best thing on the menu is ")
     print(f"the {color} {noun}. Instead of ground beef they ")
     print(f"fill the taco with {foods}, cheese, and top it off")
-    print(f"  with a salsa made from {foods}.") 
+    print(f"  with a salsa made from {foods}.")
     print("If that doesn't make your mouth water, ")
     print(f"then it' just like {person} always says: {phrase}! \n\n",)
 
 
 def pizza_party():
-    (adjective, person, foods, place, celebrity, feeling, 
-     thing, song) = input_properties()
-    # adjective = input("Insert a Adjective (describtive word)....\n")
-    # person = input("Insert Person's Name ....\n ")
-    # foods = input("Insert Foods (plural) ....\n")
-    # celebrity = input("Insert Celebrities's Name ....\n ")
-    # feeling = input("Insert a Feeling....\n ")
-    # thing = input("Insert something or funny word...\n ")
-    # song = input("Insert a Song name....\n ")
-    # place = input("Insert a Place....\n ")
-    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
+    adjective = selectItem('adjective')
+    song = selectItem('song')
+    thing = selectItem('thing')
+    feeling = selectItem('feeling')
+    celebrity = selectItem('celebrity')
+    place = selectItem('place')
+    foods = selectItem('foods')
+    person = selectItem('person')
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("     >>------>  [ THE PIZZA PARTY ] <------<<  ")
     print("⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀   ⠀⠀⣠⣤⣶⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ")
@@ -220,20 +193,18 @@ def pizza_party():
     print(f"They even stuffed the crust with {thing}'s. How {feeling}! ")
     print(f"If that wasn't good enough already, A {celebrity} was there ")
     print(f"singing {song} I was so inspired by the music. \n\n")
-    
+
 
 def about_me():
-    (verb, animal, color, celebrity, thing, job, place,
-     phrase) = input_properties()
-    # verb = input("Insert a Verb (action word)....\n")
-    # animal = input("Insert an Animal....\n ")
-    # color = input("Insert a colour ....\n ")
-    # celebrity = input("Insert Celebrities's Name ....\n ")
-    # thing = input("Insert something or funny word...\n ")
-    # place = input("Insert a Place....\n ")
-    # job = input("Insert a Job name....\n")
-    # phrase = input("Insert a Phrase ....\n ")
-    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
+    animal = selectItem('animal')
+    place = selectItem('place')
+    verb = selectItem('verb')
+    color = selectItem('color')
+    job = selectItem('job')
+    thing = selectItem('thing')
+    celebrity = selectItem('celebrity')
+    phrase = selectItem('phrase')
+    print("\n.-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
     print("    >>------>  [ ABOUT ME ] <------<<   ")
     print("                    ___   .--.     ")
@@ -243,7 +214,7 @@ def about_me():
     print("              '.            ! \        ")
     print("                |     !  .--.  |       ")
     print("                \        '--'  /.____   ")
-    print("               /`-.     \__,'.'      `\   ") 
+    print("               /`-.     \__,'.'      `\   ")
     print("            __/   \`-.____.-' `\      /   ")
     print("            | `---`'-'._/-`     \----'    _    ")
     print("            |,-'`  /             |    _.-' `\   ")
@@ -266,32 +237,31 @@ def about_me():
 
 
 def butterflies():
-    (adjective, color, thing, place, person, foods, verb,
-     phrase) = input_properties()
-    # color = input("Insert a colour ....\n ")
-    # adjective = input("Insert a Adjective (describtive word)....\n")
-    # thing = input("Insert something or funny word...\n ")
-    # place = input("Insert a Place....\n ")
-    # person = input("Insert Person's Name ....\n ")
-    # foods = input("Insert Foods (plural) ....\n")
-    # verb = input("Insert a Verb (action word)....\n")
-    # phrase = input("Insert a Phrase ....\n ")
-    print("\n .-~-.-~-.-~.-~-.-~-.-~  LOADING STORY... .-~-.-~-.-~.-~-.-~-.-~\n\n")
+    adjective = selectItem('adjective')
+    place = selectItem('place')
+    verb = selectItem('verb')
+    color = selectItem('color')
+    thing = selectItem('thing')
+    foods = selectItem('foods')
+    person = selectItem('person')
+    phrase = selectItem('phrase')
+    
+    print("\n .-~-.-~-.-~.-~-.-~-.-~ LOADING STORY -~-.-~-.-~.-~-.-~-.-~\n\n")
     time.sleep(2)
-    print("   >>------>  [ BUTTERLIES] <------<<   ")     
-    print("    / `._                     _.' \     ") 
-    print("    ( @ : `.                 .' : @ )   ") 
-    print("     \  `.  `.  ._     _.  .'  .'  /    ") 
-    print("      \;' `.  `.  \   /  .'  .' `;/     ") 
-    print("       \`.  `.  \  \_/  /  .'  .'/      ") 
-    print("        ) :-._`. \ (:) / .'_.-: (       ") 
-    print("        (`.....,`.\/:\/.',.....')       ") 
-    print("         >------._|:::|_.------<        ") 
-    print("        / .'._>_.-|:::|-._<_.'. \        ") 
-    print("        |o _.-'_.-^|:|^-._`-._ o|       ") 
-    print("        |`'   ;_.-'|:|`-._;   `'|       ") 
-    print("        '.o_.-' ;.'|:|'.; `-._o.'       ") 
-    print("         ''.__.'   \:/   '.__.''         ") 
+    print("   >>------>  [ BUTTERLIES] <------<<   ")
+    print("    / `._                     _.' \     ")
+    print("    ( @ : `.                 .' : @ )   ")
+    print("     \  `.  `.  ._     _.  .'  .'  /    ")
+    print("      \;' `.  `.  \   /  .'  .' `;/     ")
+    print("       \`.  `.  \  \_/  /  .'  .'/      ")
+    print("        ) :-._`. \ (:) / .'_.-: (       ")
+    print("        (`.....,`.\/:\/.',.....')       ")
+    print("         >------._|:::|_.------<        ")
+    print("        / .'._>_.-|:::|-._<_.'. \        ")
+    print("        |o _.-'_.-^|:|^-._`-._ o|       ")
+    print("        |`'   ;_.-'|:|`-._;   `'|       ")
+    print("        '.o_.-' ;.'|:|'.; `-._o.'       ")
+    print("         ''.__.'   \:/   '.__.''         ")
     print("                    ^                   ") 
     print(f"\n\n Last night I dreamed I was a {adjective} butterfly")
     print(f"with {color} splotches that looked like {thing}'s.")
