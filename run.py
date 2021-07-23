@@ -3,21 +3,21 @@
 import time
 
 words = {
-    'adjective': ['red', 'blue'],
-    'animal': ['fox', 'lion'],
-    'vehicle': ['car', 'van'],
-    'verb': ['sleeping', 'drinking'],
-    'noun': ['dog', 'cat'],
-    'foods': ['rice', 'beens'],
-    'person': ['dad', 'son', 'mum'],
-    'color': ['red', 'blue', 'green', 'black'],
-    'place': ['aaa', 'sss'],
-    'celebrity': ['aaa', 'sss'],
-    'feeling': ['aaa', 'sss'],
-    'thing': ['aaa', 'sss'],
-    'song': ['aaa', 'sss'],
-    'job': ['aaa', 'sss'],
-    'phrase': ['Just di it!', 'Watch out!']
+    'adjective': ['Jolly', 'Hungry', 'Annoying', 'Colorful', 'Cute', 'Sleepy'],
+    'animal': ['Fox', 'Lion', 'Zebra', 'Shark', 'Dog', 'Elephant'],
+    'vehicle': ['Car', 'Van', 'Bicycle', 'Truck', 'Bus', 'RV'],
+    'verb': ['Sleeping', 'Drinking', 'Move', 'Like', 'Jump', 'Run'],
+    'noun': ['Beach', 'Gold', 'Football', 'Crowd', 'Bed', 'Dress'],
+    'foods': ['Rice', 'Beans', 'Crisps', 'Chocolate', 'Crackers', 'Bananas'],
+    'person': ['Mum', 'Dad', 'Brother', 'Sister', 'John', 'Molly', 'Mike', 'Sam'],
+    'color': ['Red', 'Blue', 'Orange', 'Black', 'Yellow', 'Purple', 'Green'],
+    'place': ['Beach', 'Shop', 'Country Side', 'Hospital', 'Playground', 'School'],
+    'celebrity': ['Bruno Mars', 'Kesha', 'Beyounce', 'Ed Sheeran'],
+    'feeling': ['Happy', 'Sad', 'Exited', 'Angry', 'Confused', 'Jolly'],
+    'thing': ['Hair', 'Carpet', 'Alien', 'Ball', 'Frisby', 'Toy'],
+    'song': ['Twinkle Twinkle', 'ABC Song', 'Itsy Bitsy Spider', 'Pat a Cake', ],
+    'job': ['Magician', 'Electrician', 'Hair Stylist', 'Pop Star', 'King', 'Queen'],
+    'phrase': ['Just di it!', 'Watch out!', 'With great power, comes great responsibility']
 }
 
 
@@ -92,7 +92,6 @@ def main():
         print("3. About Me")
         print("4. Buterflies \n")
         print("5. To Exit \n")
-        time.sleep(2)
         print("Which will you choose? (1, 2, 3,4) ?\n")
         choice = input()
         # Calls a story function based on choices
