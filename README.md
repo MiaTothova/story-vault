@@ -2,8 +2,8 @@
 
 [View the live project here.](https://story-vault.herokuapp.com/)
 
-**![](https://github.com/MiaTothova/story-vault/blob/main/images/responsive.png)
-**The image is from [Am I responsive?](http://ami.responsivedesign.is/)
+![](https://github.com/MiaTothova/story-vault/blob/main/images/responsive.png)
+The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
 Story Vault is a terminal based story generator designed mainly for children 7 years and up. It was designed to provide a fun environment in which the children can create stories very much like Madlibs. They select words provided from the terminal and the story is created for them. They can play as much as they like untill they decide to end the game.
 
@@ -62,7 +62,7 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 * [Gitpod](https://gitpod.io/workspaces)I used this developer to write the code for this game.
 * [Github](https://github.com/) Was used to host my repository and readme.
 * [Heroku](https://id.heroku.com/login)To host my app and deploy here.
-* [pep8online.com](http://pep8online.com/checkresult) To validate my code and check for errors
+* [pep8online.com](http://pep8online.com/) To validate my code and check for errors
 
 ## Testing
 1. As a new visitor, I want to easily navigate the terminal to play the game..
@@ -90,7 +90,7 @@ To ensure that a broad range of users can successfully view/use the site, I test
 Although this is a web app it is visible on a mobile and tablets, even though it is not responsive.
 
 ## Validation
-![](https://github.com/MiaTothova/story-vault/blob/main/images/pep8.png.)
+![](https://github.com/MiaTothova/story-vault/blob/main/images/pep8.png)
 
 
 ## Deployment
