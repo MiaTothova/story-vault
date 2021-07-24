@@ -1,45 +1,119 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Story Vault
 
-Welcome MiaTothova,
+[View the live project here.](https://story-vault.herokuapp.com/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+**![alt text](ADD IMAGE HERE)
+**The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
-## Gitpod Reminders
+Story Vault is a terminal based story generator designed mainly for children 7 years and up. It was designed to provide a fun environment in which the children can create stories very much like Madlibs. They select words provided from the terminal and the story is created for them. They can play as much as they like untill they decide to end the game.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
+I aimed to create a story generator game for children that is fun, and is very easy to manipulate and input data.
 
-`python3 -m http.server`
+#### The ideal client:
+* Children
+* Adults
+* English Speaking
+* Readers
+* People who like silly stories
 
-A blue button should appear to click: *Make Public*,
+### The game will help clients to:
+* Navigate easily through the terminal
+* Test their reading skills
+* Improve their imagination
+* Provide entertainment
 
-Another blue button should appear to click: *Open Browser*.
+## Owner Stories
+1. As the owner, I want the game to be fun and make the user to keep returning.
+2. As the owner, I want the game to be educational.
+3. As the owner, I want to show my new learned skills with Python.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
+1. As a new visitor, I want to easily navigate the terminal to play the game.
+2. As a visitor, I want to be able to exit the game when I get tired of playing.
+3. As a visitor, I want to be create and read fun stories.
 
-A blue button should appear to click: *Make Public*,
+## The skeleton
+The Game consists of only 1 page which is the terminal page. I am using Python to generate the data and create stories.
+* The terminal game is not responsive and is only 1 page therefore wireframes were not needed this time.
+****** Chart here..............................................................
 
-Another blue button should appear to click: *Open Browser*.
+## The Scope
+To achieve my goal, I included the following features in my game:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Features
+1. A welcoming message asking the user to enter his/her name.
+2. List of 4 stories in the library which I can keep adding to.
+3. A List of words like adjectives and verbs from which the user can select and then these words are returned into the stories.
+4. The user has a choice to end the game by selecting 5.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Future features
+I ran out of time to implement these changes, I will inplement them in the future:
+* Form validation: The input required in the "name" box.
+* Save score option.
+* Top 5 high scores board.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## The Design
+It is a children's game therefore the graphics sre very child friendly. Each story has its own image based on the title eg. place for "taco story" (I could not find a ASCII image for a taco), Pizza for "Pizza story",Teddy bear for "About me" and a Butterfly for "Butterflies".
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
+* [Gitpod](https://gitpod.io/workspaces)I used this developer to write the code for this game.
+* [Github](https://github.com/) Was used to host my repository and readme.
+* [Heroku](https://id.heroku.com/login)To host my app and deploy here.
+* [pep8online.com](http://pep8online.com/checkresult) To validate my code and check for errors
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing
+1. As a new visitor, I want to easily navigate the terminal to play the game..
+![](IMAGE HERE...........)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+2. As a visitor, I want to be able to exit the game when I get tired of playing..
+![](IMAGE HERE...............................)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+3. As a visitor, I want to be create and read fun stories.
+![](IMAGE HERE.................) 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ ### Adicional Testing
+ 
+* I continuasly used the pep8online linter to confirm my code is problem free
+* I used and tested in the gitpod terminal replaying and fixing isues until I got it right.
+* Tested on the Heroku terminal as I set up automatic deployment so I was able to see exactly how the game generated.
 
---------
+ ## Compatibility
+To ensure that a broad range of users can successfully view/use the site, I tested it across all major browsers on both desktop and mobile.
+* Chrome
+* Mozila Firefox
+* Edge
+* Internet explorer
+* Safari
+Although this is a web app it is visible on a mobile and tablets, even though it is not responsive.
 
-Happy coding!
+## Validation
+![](PUT IMAGE HERE..............)
+
+
+## Deployment
+
+This project was developed using Heroku, committed to git and pushed to GitHub using git commands. You can clone this repository [Here](https://github.com/MiaTothova/story-vault)
+
+To deploy this page to Heroku from GitHub repository, the following steps were taken:
+
+1. 
+2. 
+4. 
+5. 
+6. 
+
+## Credits
+* With this project everything seemed prety straight forward. 
+* I have used youtube and google search to look up inspirations on how to aproache a Madlib game.
+* But I have not copied or reused anyone elses code in this project.
+* I have watched the following videos for inspiration:
+* [This site was used to get my templates for my stories](https://www.glowwordbooks.com/blog/category/kids-online-mad-libs/) 
+* [This website was used to get ASCII code for my images](https://www.asciiart.eu/)
+* My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had Especialy in regards to the dictionary.
+* Kasia Bogucka our Cohort Facilitator was very hepful in answering questions and providing us with information from Code Institute.
+
+
+
