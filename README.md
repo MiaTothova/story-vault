@@ -2,7 +2,7 @@
 
 [View the live project here.](https://story-vault.herokuapp.com/)
 
-**![alt text](ADD IMAGE HERE)
+**![](https://github.com/MiaTothova/story-vault/blob/main/images/responsive.png)
 **The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
 Story Vault is a terminal based story generator designed mainly for children 7 years and up. It was designed to provide a fun environment in which the children can create stories very much like Madlibs. They select words provided from the terminal and the story is created for them. They can play as much as they like untill they decide to end the game.
@@ -36,7 +36,7 @@ I aimed to create a story generator game for children that is fun, and is very e
 ## The skeleton
 The Game consists of only 1 page which is the terminal page. I am using Python to generate the data and create stories.
 * The terminal game is not responsive and is only 1 page therefore wireframes were not needed this time.
-****** Chart here..............................................................
+![](https://github.com/MiaTothova/story-vault/blob/main/images/chart.png)
 
 ## The Scope
 To achieve my goal, I included the following features in my game:
@@ -90,7 +90,7 @@ To ensure that a broad range of users can successfully view/use the site, I test
 Although this is a web app it is visible on a mobile and tablets, even though it is not responsive.
 
 ## Validation
-![](PUT IMAGE HERE..............)
+![](https://github.com/MiaTothova/story-vault/blob/main/images/pep8.png.)
 
 
 ## Deployment
