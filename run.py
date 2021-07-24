@@ -17,7 +17,7 @@ words = {
     'thing': ['Hair', 'Carpet', 'Alien', 'Ball', 'Frisby', 'Toy'],
     'song': ['Twinkle Twinkle', 'ABC Song', 'Itsy Bitsy Spider', 'Pat a Cake'],
     'job': ['Magician', 'Electrician', 'Hair Stylist', 'King', 'Queen'],
-    'phrase': ['Just do it!', 'With power', 'comes great responsibility']
+    'phrase': ['Just do it!', 'With power comes great responsibility']
 }
 
 
@@ -148,7 +148,7 @@ def taco_story():
     print("     %%   %%   \  '.       .'  /   %%  %%   ")
     print("     %%   %%    '.  `-.,.-'  .'    %%  %%   ")
     print("     %%   %%      '-.,___,.-'      %%  %%   ")
-    print("\n\nToday I went to my favorite Taco Stand called ")
+    print("\nToday I went to my favorite Taco Stand called ")
     print(f"the {adjective} {animal}. Unlike most food stands,")
     print(f" they cook and prepare the food in a {vehicle}")
     print(f"while you {verb}. The best thing on the menu is ")
@@ -230,7 +230,7 @@ def about_me():
     print("                          \        /        ")
     print("                           '._  _.'          ")
     print("                              ``            ")
-    print(f"\n\n Hi my name is {celebrity}, ")
+    print(f"\n Hi my name is {celebrity}, ")
     print(f"but my friends call me {thing}")
     print(f"My favorite color is the {color} of {thing}'s and my favorite ")
     print(f"thing to do is {verb}. My parents were a {animal} and {job},")
@@ -267,7 +267,7 @@ def butterflies():
     print("        '.o_.-' ;.'|:|'.; `-._o.'       ")
     print("         ''.__.'   \:/   '.__.''         ")
     print("                    ^                   ")
-    print(f"\n\n Last night I dreamed I was a {adjective} butterfly")
+    print(f"\n Last night I dreamed I was a {adjective} butterfly")
     print(f"with {color} splotches that looked like {thing}'s.")
     print(f"I flew to {place} with my best friend, {person}, ")
     print(f"who was a {adjective} INSECT. We ate some {foods} when")
