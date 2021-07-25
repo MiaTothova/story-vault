@@ -47,7 +47,6 @@ To achieve my goal, I included the following features in my game:
 3. A List of words like adjectives and verbs from which the user can select and then these words are returned into the stories.
 4. The user has a choice to end the game by selecting 5.
 
-
 ### Future features
 I ran out of time to implement these changes, I will inplement them in the future:
 * Form validation: The input required in the "name" box.
@@ -56,7 +55,7 @@ I ran out of time to implement these changes, I will inplement them in the futur
 
 ## The Design
 It is a children's game therefore the graphics sre very child friendly. Each story has its own image based on the title eg. place for "taco story" (I could not find a ASCII image for a taco), Pizza for "Pizza story",Teddy bear for "About me" and a Butterfly for "Butterflies".
-
+* I have imported 'Time' which has allowed me to put a time break on how fast the text apeares in terminal. Eg. there is a time.sleep(10) after a story which will take 10seconds before another selection for a story is possible. Giving the user a bit of time to read. Otherwise everything would apeard at the same time in the terminal.   
 
 ## Technologies Used
 * [Gitpod](https://gitpod.io/workspaces) I used this developer to write the code for this game.
@@ -79,7 +78,6 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/test-3.png) 
 
  ### Adicional Testing
- 
 * I continuasly used the pep8online linter to confirm my code is problem free
 * I used and tested in the gitpod terminal replaying and fixing isues until I got it right.
 * Tested on the Heroku terminal as I set up automatic deployment so I was able to see exactly how the game generated.
@@ -96,9 +94,7 @@ Although this is a web app it is visible on a mobile and tablets, even though it
 ## Validation
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/pep8.png)
 
-
 ## Deployment
-
 This project was developed using Heroku, committed to git and pushed to GitHub using git commands. You can clone this repository [Here](https://github.com/MiaTothova/story-vault)
 
 To deploy this page to Heroku from GitHub repository, the following steps were taken:
@@ -112,10 +108,11 @@ To deploy this page to Heroku from GitHub repository, the following steps were t
 8. After it has succesfully deployed a 'view' button appeared which took me to my deployed app.
 
 ## Credits
-* With this project everything seemed prety straight forward. 
-* I have used youtube and google search to look up inspirations on how to aproache a Madlib game.
-* But I have not copied or reused anyone elses code in this project.
+* With this project everything seemed pretty straight forward. 
+* I have used youtube and google search to look up inspirations on how to aproach a Madlib game. I have not copied or reused anyone elses code in this project. 
 * I have watched the following videos for inspiration:
+   [Mad Libs Game](https://www.youtube.com/watch?v=u7g9mRzQLYE&t=2s)
+   [Build a Mad Libs Generator ](https://www.youtube.com/watch?v=vFNZvZSOqlY&t=2s)
 * [This site was used to get my templates for my stories](https://www.glowwordbooks.com/blog/category/kids-online-mad-libs/) 
 * [This website was used to get ASCII code for my images](https://www.asciiart.eu/)
 * My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had Especialy in regards to the dictionary.
