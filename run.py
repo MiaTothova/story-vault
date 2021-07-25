@@ -120,6 +120,7 @@ def main():
             break
         else:
             print("Please enter a valid option! \n\n")
+            time.sleep(1)
 
 
 def taco_story():
