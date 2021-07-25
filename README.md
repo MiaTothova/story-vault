@@ -59,7 +59,7 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 
 
 ## Technologies Used
-* [Gitpod](https://gitpod.io/workspaces)I used this developer to write the code for this game.
+* [Gitpod](https://gitpod.io/workspaces) I used this developer to write the code for this game.
 * [Github](https://github.com/) Was used to host my repository and readme.
 * [Heroku](https://id.heroku.com/login)To host my app and deploy here.
 * [pep8online.com](http://pep8online.com/) To validate my code and check for errors
@@ -99,11 +99,13 @@ This project was developed using Heroku, committed to git and pushed to GitHub u
 
 To deploy this page to Heroku from GitHub repository, the following steps were taken:
 
-1. 
-2. 
-4. 
-5. 
-6. 
+1. In the Heroku dashboard I selected 'New' in the top right hand corner and clicked on 'Create new app'.
+2. Then I Created the App name and Choose my region as Europe. Then selected 'Create app'
+4. Then I selected Settings tab, and scrolled down to 'Buildpacks'. Here I added 'Python' clicked saved changes and then selected 'Node.js' and saved my changes again.
+5. On top of the page I clicked on the 'Deploy' section, and I selected Github as my deployment method.
+6. Then I selected 'Connect to Github, and searched for my repository name and clicked on 'Connect' to link my Heroku app to my Github repository code.
+7. Scrolling down I have selected 'Enable Automatic Deploys' and after this 'DEploy Branch' to deploy my project. I had to wait for it to build.
+8. After it has succesfully deployd a 'view' button appeared which took me to my deployed app.
 
 ## Credits
 * With this project everything seemed prety straight forward. 
