@@ -111,8 +111,8 @@ To deploy this page to Heroku from GitHub repository, the following steps were t
 * With this project everything seemed pretty straight forward. 
 * I have used youtube and google search to look up inspirations on how to aproach a Madlib game. I have not copied or reused anyone elses code in this project. 
 * I have watched the following videos for inspiration:
-   [Mad Libs Game](https://www.youtube.com/watch?v=u7g9mRzQLYE&t=2s)
-   [Build a Mad Libs Generator ](https://www.youtube.com/watch?v=vFNZvZSOqlY&t=2s)
+   1. [Mad Libs Game](https://www.youtube.com/watch?v=u7g9mRzQLYE&t=2s)
+   2. [Build a Mad Libs Generator](https://www.youtube.com/watch?v=vFNZvZSOqlY&t=2s)
 * [This site was used to get my templates for my stories](https://www.glowwordbooks.com/blog/category/kids-online-mad-libs/) 
 * [This website was used to get ASCII code for my images](https://www.asciiart.eu/)
 * My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had Especialy in regards to the dictionary.
