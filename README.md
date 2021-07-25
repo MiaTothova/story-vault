@@ -66,13 +66,13 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 
 ## Testing
 1. As a new visitor, I want to easily navigate the terminal to play the game..
-![](IMAGE HERE...........)
+![](https://github.com/MiaTothova/story-vault/blob/main/images/test-1.png)
 
 2. As a visitor, I want to be able to exit the game when I get tired of playing..
-![](IMAGE HERE...............................)
+![](https://github.com/MiaTothova/story-vault/blob/main/images/test-2.png)
 
 3. As a visitor, I want to be create and read fun stories.
-![](IMAGE HERE.................) 
+![](https://github.com/MiaTothova/story-vault/blob/main/images/test-3.png) 
 
  ### Adicional Testing
  
