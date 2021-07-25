@@ -104,8 +104,8 @@ To deploy this page to Heroku from GitHub repository, the following steps were t
 4. Then I selected Settings tab, and scrolled down to 'Buildpacks'. Here I added 'Python' clicked saved changes and then selected 'Node.js' and saved my changes again.
 5. On top of the page I clicked on the 'Deploy' section, and I selected Github as my deployment method.
 6. Then I selected 'Connect to Github, and searched for my repository name and clicked on 'Connect' to link my Heroku app to my Github repository code.
-7. Scrolling down I have selected 'Enable Automatic Deploys' and after this 'DEploy Branch' to deploy my project. I had to wait for it to build.
-8. After it has succesfully deployd a 'view' button appeared which took me to my deployed app.
+7. Scrolling down I have selected 'Enable Automatic Deploys' and after this I selected 'Deploy Branch' to deploy my project. I had to wait for it to build.
+8. After it has succesfully deployed a 'view' button appeared which took me to my deployed app.
 
 ## Credits
 * With this project everything seemed prety straight forward. 
