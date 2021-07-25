@@ -65,13 +65,17 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 * [pep8online.com](http://pep8online.com/) To validate my code and check for errors
 
 ## Testing
-1. As a new visitor, I want to easily navigate the terminal to play the game..
+1. As a new visitor, I want to easily navigate the terminal to play the game.
+* Here the user inputs his/her name and press enter.
+* Then they get a selection of stories from which they can choose by selecting a number
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/test-1.png)
 
 2. As a visitor, I want to be able to exit the game when I get tired of playing..
+* When user selects 5 they get a exit message.
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/test-2.png)
 
 3. As a visitor, I want to be create and read fun stories.
+* After imputing words a fun story is created.
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/test-3.png) 
 
  ### Adicional Testing
