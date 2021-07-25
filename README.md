@@ -5,10 +5,10 @@
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/responsive.png)
 The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
-Story Vault is a terminal based story generator designed mainly for children 7 years and up. It was designed to provide a fun environment in which the children can create stories very much like Madlibs. They select words provided from the terminal and the story is created for them. They can play as much as they like untill they decide to end the game.
+Story Vault is a terminal-based story generator designed mainly for children 7 years and up. It was designed to provide a fun environment in which the children can create stories very much like Madlibs. They select words provided from the terminal and the story is created for them. They can play as much as they like until they decide to end the game.
 
 ## UX
-I aimed to create a story generator game for children that is fun, and is very easy to manipulate and input data.
+I aimed to create a story generator game for children that is fun and is very easy to manipulate and input data.
 
 #### The ideal client:
 * Children
@@ -48,14 +48,14 @@ To achieve my goal, I included the following features in my game:
 4. The user has a choice to end the game by selecting 5.
 
 ### Future features
-I ran out of time to implement these changes, I will inplement them in the future:
+I ran out of time to implement these changes, I will implement them in the future:
 * Form validation: The input required in the "name" box.
 * Save score option.
 * Top 5 high scores board.
 
 ## The Design
-It is a children's game therefore the graphics sre very child friendly. Each story has its own image based on the title eg. place for "taco story" (I could not find a ASCII image for a taco), Pizza for "Pizza story",Teddy bear for "About me" and a Butterfly for "Butterflies".
-* I have imported 'Time' which has allowed me to put a time break on how fast the text apeares in terminal. Eg. there is a time.sleep(10) after a story which will take 10seconds before another selection for a story is possible. Giving the user a bit of time to read. Otherwise everything would apeard at the same time in the terminal.   
+It is a children's game therefore the graphics are very child-friendly. Each story has its own image based on the title eg. place for "taco story" (I could not find a ASCII image for a taco), Pizza for "Pizza story",Teddy bear for "About me" and a Butterfly for "Butterflies".
+* I have imported 'Time' which has allowed me to put a time break on how fast the text appeares in the terminal. Eg. there is a time.sleep(10) after a story which will take 10seconds before another selection for a story is possible. Giving the user a bit of time to read. Otherwise, everything would appear at the same time in the terminal.   
 
 ## Technologies Used
 * [Gitpod](https://gitpod.io/workspaces) I used this developer to write the code for this game.
@@ -78,9 +78,9 @@ It is a children's game therefore the graphics sre very child friendly. Each sto
 ![](https://github.com/MiaTothova/story-vault/blob/main/images/test-3.png) 
 
  ### Adicional Testing
-* I continuasly used the pep8online linter to confirm my code is problem free
-* I used and tested in the gitpod terminal replaying and fixing isues until I got it right.
-* Tested on the Heroku terminal as I set up automatic deployment so I was able to see exactly how the game generated.
+* I continously used the pep8online linter to confirm my code is problem-free
+* I used and tested in the gitpod terminal replaying and fixing issues until I got it right.
+* Tested on the Heroku terminal as I set up automatic deployment so I was able to see exactly how the game was generated.
 
  ## Compatibility
 To ensure that a broad range of users can successfully view/use the site, I tested it across all major browsers on both desktop and mobile.
@@ -105,17 +105,17 @@ To deploy this page to Heroku from GitHub repository, the following steps were t
 5. On top of the page I clicked on the 'Deploy' section, and I selected Github as my deployment method.
 6. Then I selected 'Connect to Github, and searched for my repository name and clicked on 'Connect' to link my Heroku app to my Github repository code.
 7. Scrolling down I have selected 'Enable Automatic Deploys' and after this I selected 'Deploy Branch' to deploy my project. I had to wait for it to build.
-8. After it has succesfully deployed a 'view' button appeared which took me to my deployed app.
+8. After it has successfully deployed a 'view' button appeared which took me to my deployed app.
 
 ## Credits
-* With this project everything seemed pretty straight forward. 
-* I have used youtube and google search to look up inspirations on how to aproach a Madlib game. I have not copied or reused anyone elses code in this project. 
+* With this project everything seemed pretty straightforward. 
+* I have used youtube and google search to look up inspirations on how to aproach a Madlib game. I have not copied or reused anyone else's code in this project. 
 * I have watched the following videos for inspiration:
    1. [Mad Libs Game](https://www.youtube.com/watch?v=u7g9mRzQLYE&t=2s)
    2. [Build a Mad Libs Generator](https://www.youtube.com/watch?v=vFNZvZSOqlY&t=2s)
 * [This site was used to get my templates for my stories](https://www.glowwordbooks.com/blog/category/kids-online-mad-libs/) 
 * [This website was used to get ASCII code for my images](https://www.asciiart.eu/)
-* My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had Especialy in regards to the dictionary.
+* My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had Especially in regards to the dictionary.
 * Kasia Bogucka our Cohort Facilitator was very hepful in answering questions and providing us with information from Code Institute.
 
 
